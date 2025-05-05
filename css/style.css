@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+.nav_list {
+    display: flex;
+}
+
+
+.nav_item {
+    margin-right: 63px;
+    color: rgb(228, 228, 228);
+    font-family: Pixelify Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.header {
+    background: rgb(138, 173, 71);
+    padding: 22px 0;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(138, 173, 71);
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nav {
+    margin: auto;
+}
+
+.nav_list {
+    list-style: none;
+}
+
+.container_home {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home_content {
+    width: 453px;
+}
+
+.home_title {
+    color: rgb(228, 228, 228);
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: 400;
+    font-family: Pixelify Sans;
+}
+
+.home {
+    background: rgb(47, 64, 28);
+    padding: 67px 0;
+}
+
+.btn {
+    border-radius: 6px;
+    background: rgb(204, 150, 10);
+    padding: 12.5px 40px;
+    font-size: 20px;
+    font-family: Pixelify Sans;
+}
+
+.cont_btn {
+    display: flex;
+}
+
+.about_title {
+    color: rgb(12, 30, 10);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58px;
+    text-align: center;
+    font-family: Pixelify Sans;
+}
+
+.about {
+    background-image: url(../img/text.png);
+    padding: 65px 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.about_container {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+}
+
+.about_text {
+    color: rgb(1, 6, 0);
+    font-size: 28px;
+    font-weight: 400;
+    width: 460px;
+    color: aliceblue;
+    font-family: Pixelify Sans;
+}
+
+.video {
+    text-align: center;
+    padding: 68px 0;
+}
+
+.video_title {
+    font-family: Pixelify Sans;
+}
+
+.main_video {
+    width: 877px;
+    height: 671px;
+    border-radius: 29px;
+    border: 29px solid rgb(76, 44, 44);
+}
+.footer_list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+}
+footer {
+    background: rgb(86, 87, 87);
+    padding: 25px 0px;
+}
+.footer_container {
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_title {
+    color: rgb(228, 228, 228);
+    font-family: Pixelify Sans;
+    font-size: 30px;
+    font-weight: 800;
+}
+.footer_text {
+    color: rgb(228, 228, 228);
+    color: rgb(228, 228, 228);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Pixelify Sans;
+}
+
+.burger {
+    background-color: transparent;
+    border: none;
+    display: none; 
+}
+
+
+@media (max-width: 834px) {
+    .nav {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    .header_container {
+        max-width: 629px;
+        justify-content: space-between;
+    }
+    .home_img {
+        width: 349px;
+    }
+    .container_home {
+        max-width: 629px;
+    }
+}
