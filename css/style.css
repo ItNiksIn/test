@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
-.nav_list {
-    display: flex;
+/* === Общие стили (для больших экранов) === */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(138, 173, 71);
+    font-size: 16px; /* Base font size */
 }
 
-
-.nav_item {
-    margin-right: 63px;
-    color: rgb(228, 228, 228);
-    font-family: Pixelify Sans;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
+html {
+    scroll-behavior: smooth;
 }
 
+/* Header */
 .header {
     background: rgb(138, 173, 71);
     padding: 22px 0;
@@ -22,21 +22,14 @@
     top: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background: rgb(138, 173, 71);
-}
-
 .header_container {
     display: flex;
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box; /* Important! */
 }
 
 .nav {
@@ -45,6 +38,28 @@ body {
 
 .nav_list {
     list-style: none;
+    display: flex;
+}
+
+.nav_item {
+    margin-right: 63px;
+    color: rgb(228, 228, 228);
+    font-family: Pixelify Sans;
+    font-size: 1.125rem; /* 18px / 16px = 1.125em */
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.burger {
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+/* Home Section */
+.home {
+    background: rgb(47, 64, 28);
+    padding: 67px 0;
 }
 
 .container_home {
@@ -53,6 +68,8 @@ body {
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box; /* Important! */
 }
 
 .home_content {
@@ -61,65 +78,73 @@ body {
 
 .home_title {
     color: rgb(228, 228, 228);
-    font-family: Inter;
-    font-size: 60px;
+    font-family: Pixelify Sans;
+    font-size: 3.75rem; /* 60px / 16px = 3.75rem */
     font-weight: 400;
-    font-family: Pixelify Sans;
 }
 
-.home {
-    background: rgb(47, 64, 28);
-    padding: 67px 0;
-}
-
-.btn {
-    border-radius: 6px;
-    background: rgb(204, 150, 10);
-    padding: 12.5px 40px;
-    font-size: 20px;
-    font-family: Pixelify Sans;
+.home_img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .cont_btn {
     display: flex;
 }
 
-.about_title {
-    color: rgb(12, 30, 10);
-    font-family: Inter;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 58px;
-    text-align: center;
+.btn {
+    border-radius: 6px;
+    background: rgb(204, 150, 10);
+    padding: 12.5px 40px;
+    font-size: 1.25rem; /* 20px / 16px = 1.25rem */
     font-family: Pixelify Sans;
 }
 
+/* About Section */
 .about {
     background-image: url(../img/text.png);
     padding: 65px 0;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
 .about_container {
-    display: flex;
+    max-width: 1100px;
     margin: auto;
+    padding: 0 20px;
+    box-sizing: border-box; /* Important! */
+}
+
+.about_container-inner {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1100px;
+}
+
+.about_title {
+    color: rgb(12, 30, 10);
+    font-family: Pixelify Sans;
+    font-size: 3rem; /* 48px / 16px = 3rem */
+    font-weight: 400;
+    text-align: center;
 }
 
 .about_text {
     color: rgb(1, 6, 0);
-    font-size: 28px;
+    font-size: 1.75rem; /* 28px / 16px = 1.75rem */
     font-weight: 400;
     width: 460px;
     color: aliceblue;
     font-family: Pixelify Sans;
 }
 
+.about_img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Video Section */
 .video {
     text-align: center;
     padding: 68px 0;
@@ -127,6 +152,7 @@ body {
 
 .video_title {
     font-family: Pixelify Sans;
+    font-size: 2rem; /* Пример относительного размера */
 }
 
 .main_video {
@@ -134,63 +160,175 @@ body {
     height: 671px;
     border-radius: 29px;
     border: 29px solid rgb(76, 44, 44);
+    max-width: 100%;
 }
-.footer_list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    width: 130px;
-}
+
+/* Footer */
 footer {
     background: rgb(86, 87, 87);
     padding: 25px 0px;
 }
+
 .footer_container {
     align-items: center;
     max-width: 1100px;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box; /* Important! */
 }
+
+.footer_content {
+    text-align: left;
+}
+
 .footer_title {
     color: rgb(228, 228, 228);
     font-family: Pixelify Sans;
-    font-size: 30px;
+    font-size: 1.875rem; /* 30px / 16px = 1.875rem */
     font-weight: 800;
 }
+
 .footer_text {
     color: rgb(228, 228, 228);
-    color: rgb(228, 228, 228);
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
     font-family: Pixelify Sans;
+    font-size: 1rem; /* 16px / 16px = 1rem */
 }
 
-.burger {
-    background-color: transparent;
-    border: none;
-    display: none; 
+.footer_list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
 }
 
+/* === Media Queries === */
 
 @media (max-width: 834px) {
     .nav {
         display: none;
     }
+
     .burger {
         display: block;
     }
+
     .header_container {
-        max-width: 629px;
+        max-width: 100%; /* Use 100% */
         justify-content: space-between;
     }
+
     .home_img {
-        width: 349px;
+        width: auto; /* Remove fixed width */
     }
+
     .container_home {
-        max-width: 629px;
+        max-width: 100%; /* Use 100% */
     }
+
+    .home_content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home_title {
+        font-size: 2.5rem; /* Smaller font size */
+    }
+
+    .cont_btn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+        width: auto; /* Automatic width */
+    }
+
+    .about_container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about_container-inner {
+        display: block; /* or initial, if needed */
+    }
+
+    .about_img {
+        max-width: 300px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .about_text {
+        width: 100%;
+        font-size: 1.25rem; /* Smaller font size */
+    }
+
+    .main_video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* === Стили для совсем маленьких экранов (телефонов) === */
+
+@media (max-width: 480px) {
+    .header_container,
+    .container_home,
+    .about_container,
+    .footer_container {
+        width: 100%;
+        padding: 0 10px; /* Keep padding for small screens */
+        box-sizing: border-box;
+    }
+
+    .nav_item {
+        margin-right: 20px;
+        font-size: 1rem;
+    }
+
+    .home_title {
+        font-size: 1.5rem;
+    }
+
+    .cont_btn {
+        flex-direction: column; /* Кнопки располагаются вертикально */
+        width: 100%; /*Растягиваем кнопки*/
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .about_container {
+        padding: 0 10px;
+    }
+
+    .about_text {
+        font-size: 1.125rem;
+    }
+
+    .main_video {
+        border-width: 10px;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        align-items: center; /* Center items */
+    }
+
+    .footer_list {
+        margin: 10px auto; /* Center on small screens */
+    }
+
+    .home_img {
+        max-width: 100%;
+    }
+
 }
